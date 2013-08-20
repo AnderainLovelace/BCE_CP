@@ -1,0 +1,65 @@
+# Project: BCE_CP
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = C:\PROGRA~1\CASIO\CLASSP~1\Bin\gcc_shcgcc.exe -D__DEBUG__
+CC   = C:\PROGRA~1\CASIO\CLASSP~1\Bin\gcc_shcgcc.exe -D__DEBUG__
+WINDRES = C:\PROGRA~1\CASIO\CLASSP~1\Bin\gcc_shcgcc.exe
+RES  = 
+OBJ  = outputdir/blockmem.o outputdir/kasprintf.o outputdir/string_ext.o outputdir/main.o outputdir/bce.o outputdir/equation.o outputdir/fix.o outputdir/fraction.o outputdir/matrix_io.o outputdir/mmdiv.o outputdir/molecule.o outputdir/polynomial.o outputdir/syntax.o $(RES)
+LINKOBJ  = outputdir/blockmem.o outputdir/kasprintf.o outputdir/string_ext.o outputdir/main.o outputdir/bce.o outputdir/equation.o outputdir/fix.o outputdir/fraction.o outputdir/matrix_io.o outputdir/mmdiv.o outputdir/molecule.o outputdir/polynomial.o outputdir/syntax.o $(RES)
+LIBS =  -L"C:/PROGRA~1/Dev-Cpp/lib" -FO=library -NOLO -NOM  -g3 
+INCS =  -I"C:/PROGRA~1/CASIO/CLASSP~1/cp_include" 
+CXXINCS =  -I"C:/PROGRA~1/CASIO/CLASSP~1/cp_include" 
+BIN  = outputdir/BCE_CP.exe
+CXXFLAGS = $(CXXINCS)   -cpu=sh3 -NOLOGO -RTTI=OFF -NOEX -w -g3
+CFLAGS = $(INCS)   -cpu=sh3 -NOLOGO -RTTI=OFF -NOEX -w -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before outputdir/BCE_CP.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "outputdir\BCE_CP.exe" $(LIBS)
+
+outputdir/blockmem.o: lib/blockmem.cpp
+	$(CPP) -c lib/blockmem.cpp -o outputdir/blockmem.o $(CXXFLAGS)
+
+outputdir/kasprintf.o: lib/kasprintf.cpp
+	$(CPP) -c lib/kasprintf.cpp -o outputdir/kasprintf.o $(CXXFLAGS)
+
+outputdir/string_ext.o: lib/string_ext.cpp
+	$(CPP) -c lib/string_ext.cpp -o outputdir/string_ext.o $(CXXFLAGS)
+
+outputdir/main.o: main.cpp
+	$(CPP) -c main.cpp -o outputdir/main.o $(CXXFLAGS)
+
+outputdir/bce.o: kernel/bce.cpp
+	$(CPP) -c kernel/bce.cpp -o outputdir/bce.o $(CXXFLAGS)
+
+outputdir/equation.o: kernel/equation.cpp
+	$(CPP) -c kernel/equation.cpp -o outputdir/equation.o $(CXXFLAGS)
+
+outputdir/fix.o: kernel/fix.cpp
+	$(CPP) -c kernel/fix.cpp -o outputdir/fix.o $(CXXFLAGS)
+
+outputdir/fraction.o: kernel/fraction.cpp
+	$(CPP) -c kernel/fraction.cpp -o outputdir/fraction.o $(CXXFLAGS)
+
+outputdir/matrix_io.o: kernel/matrix_io.cpp
+	$(CPP) -c kernel/matrix_io.cpp -o outputdir/matrix_io.o $(CXXFLAGS)
+
+outputdir/mmdiv.o: kernel/mmdiv.cpp
+	$(CPP) -c kernel/mmdiv.cpp -o outputdir/mmdiv.o $(CXXFLAGS)
+
+outputdir/molecule.o: kernel/molecule.cpp
+	$(CPP) -c kernel/molecule.cpp -o outputdir/molecule.o $(CXXFLAGS)
+
+outputdir/polynomial.o: kernel/polynomial.cpp
+	$(CPP) -c kernel/polynomial.cpp -o outputdir/polynomial.o $(CXXFLAGS)
+
+outputdir/syntax.o: kernel/syntax.cpp
+	$(CPP) -c kernel/syntax.cpp -o outputdir/syntax.o $(CXXFLAGS)

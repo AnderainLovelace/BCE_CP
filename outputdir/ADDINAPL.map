@@ -1,0 +1,74 @@
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)20-Aug-2013 08:29:57
+
+*** Options ***
+
+C:\PROGRA~1\CASIO\CLASSP~1\obj\startaplAddin.obj
+C:\PROGRA~1\CASIO\CLASSP~1\obj\setup.obj
+C:\PROGRA~1\CASIO\CLASSP~1\obj\sectionAddin.obj
+C:\PROGRA~1\CASIO\CLASSP~1\obj\RSYSRAM.obj
+C:\PROGRA~1\CASIO\CLASSP~1\obj\BootINF.obj
+C:\PROGRA~1\CASIO\CLASSP~1\obj\main.obj
+-LIB=C:\PROGRA~1\CASIO\CLASSP~1\lib\bioslib.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libc.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\HiLIB.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\SHCLIBapl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libgcall.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\JmpTblApl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\ADDCOMMON.lib, E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib
+-OU=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld
+-CH=warning=2310
+-FO=sectrel
+-NOPRE
+-NOM
+-LIS=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.map
+-SH=SY
+-NOLO
+
+*** Error information ***
+
+** L2310 (W) Undefined external symbol "typeinfo for CPModuleWindow" referenced in "main"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P
+                                  00000000  000045df      45e0   4
+C_binaryinfo
+                                  00000000  0000003b        3c   4
+B_heap
+                                  00000000  0000000b         c   4
+B
+                                  00000000  0000000e         f   4
+R
+                                  00000000  00000000         0   4
+C$VTBL
+                                  00000000  000002b7       2b8   4
+C$INIT
+                                  00000000  00000000         0   4
+B$VTBL
+                                  00000000  0003555f     35560   4
+D
+                                  00000000  0000002f        30   4
+C
+                                  00000000  0000024f       250   4
+B_SYSRAM
+                                  00000000  00001b13      1b14   4
+C_programinfo
+                                  00000000  00000063        64   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Accessible with Abs8 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Variable Accessible with Abs16 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Function Call ***
+
+SYMBOL                              COUNTS  OPTIMIZE

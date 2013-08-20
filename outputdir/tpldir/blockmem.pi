@@ -1,0 +1,12 @@
+#_USE_RECOMPILE
+-We=--template_info_file=outputdir\tpldir\blockmem.ti
+-We=--ii_file=outputdir\tpldir\blockmem.ii
+-We=--no_auto_instantiation
+ 
+-OB=outputdir\blockmem.o
+-I=C:\PROGRA~1\CASIO\CLASSP~1\cp_include
+-cpu=sh3
+-NOLOGO
+-RTTI=OFF
+-NOEX
+lib\blockmem.cpp
