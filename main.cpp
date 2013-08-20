@@ -62,7 +62,7 @@ SIGNED BCEWindow::Message(const PegMessage &Mesg)
 		    char * exp_in;
             char * exp_out;
 		    exp_in  = bce_in->DataGet();
-		    if (*exp_in!='\0')
+		    if (exp_in!=NULL && *exp_in!='\0')
                 exp_out = automatic_balance_ce(exp_in);
             else
                 break;

@@ -18,12 +18,12 @@ LLIB=$(SDK)\lib\libc.lib
 LIBGCALL=$(SDK)\lib\libgcall.lib
 LIBJMPTBL=$(SDK)\lib\JmpTblApl.lib
 ADDCOMMON=$(SDK)\lib\ADDCOMMON.lib
-APLMAIN=E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib
+APLMAIN=E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lib
 HILIB = $(SDK)\lib\HiLIB.lib
 SHCLIB = $(SDK)\lib\SHCLIBapl.lib
-MAKEFILE = E:\Anderain\cp330\BCE_CP\OUTPUT~1\MakeCPA.mak
+MAKEFILE = E:\Anderain\git\BCE_CP\OUTPUT~1\MakeCPA.mak
 LNKINF0=$(BCOM_H) $(LLIB) $(BLIB) $(SHCLIB) $(STARTUP) $(MAKEFILE) $(LIBGCALL) $(LIBJMPTBL) $(ADDCOMMON) $(APLMAIN)
-LNKFLAGS=-OU=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld -CH=warning=2310 -FO=sectrel -NOPRE -NOM -LIS=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.map -SH=SY -NOLO
+LNKFLAGS=-OU=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld -CH=warning=2310 -FO=sectrel -NOPRE -NOM -LIS=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.map -SH=SY -NOLO
 ALLOBJ= $(SDK)\obj\RSYSRAM.obj $(SDK)\obj\BootINF.obj $(SDK)\obj\main.obj
 
 #########################################################################
@@ -32,8 +32,8 @@ ALLOBJ= $(SDK)\obj\RSYSRAM.obj $(SDK)\obj\BootINF.obj $(SDK)\obj\main.obj
 # ALL STATEMENT.  LINKS TO CREATE ADDINAPL.RLD IN THE OBJ DIRECTORY
 #########################################################################
 
-all:	E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld
+all:	E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld
 
-E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld : $(ALLOBJ) $(LNKINF0)
+E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld : $(ALLOBJ) $(LNKINF0)
 	$(LNK) $(FXOPT) $(STARTUP) $(SETUP) $(SECT) $(ALLOBJ) -LIB="$(BLIB), $(LLIB), $(HILIB), $(SHCLIB), $(LIBGCALL), $(LIBJMPTBL), $(ADDCOMMON), $(APLMAIN)" $(LNKFLAGS)
 

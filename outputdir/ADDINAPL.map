@@ -1,4 +1,4 @@
-Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)20-Aug-2013 08:29:57
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)20-Aug-2013 15:10:26
 
 *** Options ***
 
@@ -8,13 +8,13 @@ C:\PROGRA~1\CASIO\CLASSP~1\obj\sectionAddin.obj
 C:\PROGRA~1\CASIO\CLASSP~1\obj\RSYSRAM.obj
 C:\PROGRA~1\CASIO\CLASSP~1\obj\BootINF.obj
 C:\PROGRA~1\CASIO\CLASSP~1\obj\main.obj
--LIB=C:\PROGRA~1\CASIO\CLASSP~1\lib\bioslib.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libc.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\HiLIB.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\SHCLIBapl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libgcall.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\JmpTblApl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\ADDCOMMON.lib, E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib
--OU=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld
+-LIB=C:\PROGRA~1\CASIO\CLASSP~1\lib\bioslib.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libc.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\HiLIB.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\SHCLIBapl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libgcall.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\JmpTblApl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\ADDCOMMON.lib, E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lib
+-OU=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld
 -CH=warning=2310
 -FO=sectrel
 -NOPRE
 -NOM
--LIS=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.map
+-LIS=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.map
 -SH=SY
 -NOLO
 
@@ -27,7 +27,7 @@ C:\PROGRA~1\CASIO\CLASSP~1\obj\main.obj
 SECTION                            START      END         SIZE   ALIGN
 
 P
-                                  00000000  000045df      45e0   4
+                                  00000000  000045e3      45e4   4
 C_binaryinfo
                                   00000000  0000003b        3c   4
 B_heap

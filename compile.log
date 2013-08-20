@@ -1,26 +1,26 @@
 << Start Compile >> 
-FXSH.EXE -o  -SU="outputdir\temp.sub" -output=E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib -FO=library -NOLO -NOM 
+FXSH.EXE -o  -SU="outputdir\temp.sub" -output=E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lib -FO=library -NOLO -NOM 
 
 
-** L1200 (W) Backed up file "E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib" into "E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lbk"
+** L1200 (W) Backed up file "E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lib" into "E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lbk"
 
 Optimizing Linkage Editor Completed
 C:\PROGRA~1\Dev-Cpp\bin\make.exe --no-print-directory -f gcc.mak
 
 C:\PROGRA~1\Dev-Cpp\bin\g++.exe "outputdir\gcc_blockmem.o" "outputdir\gcc_kasprintf.o" "outputdir\gcc_string_ext.o" "outputdir\gcc_main.o" "outputdir\gcc_bce.o" "outputdir\gcc_equation.o" "outputdir\gcc_fix.o" "outputdir\gcc_fraction.o" "outputdir\gcc_matrix_io.o" "outputdir\gcc_mmdiv.o" "outputdir\gcc_molecule.o" "outputdir\gcc_polynomial.o" "outputdir\gcc_syntax.o"  -o "outputdir\BCE_CP.exe" -L"C:\PROGRA~1\CASIO\CLASSP~1\Dev-Cpp\lib" -D__DEBUG__ -L"C:\PROGRA~1\Dev-Cpp\lib" -g3 "C:\PROGRA~1\CASIO\CLASSP~1\lib\gcc_main.a" "C:\PROGRA~1\CASIO\CLASSP~1\lib\ClassPadDLLgcc.a"
-C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe -f E:\Anderain\cp330\BCE_CP\OUTPUT~1\MakeCPA.mak all
-C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe[1]: Entering directory `E:/Anderain/cp330/BCE_CP'
-"C:\PROGRA~1\CASIO\CLASSP~1\BIN\FXSH.EXE" -o C:\PROGRA~1\CASIO\CLASSP~1\obj\startaplAddin.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\setup.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\sectionAddin.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\RSYSRAM.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\BootINF.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\main.obj -LIB="C:\PROGRA~1\CASIO\CLASSP~1\lib\bioslib.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libc.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\HiLIB.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\SHCLIBapl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libgcall.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\JmpTblApl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\ADDCOMMON.lib, E:\Anderain\cp330\BCE_CP\OUTPUT~1\aplmain.lib" -OU=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld -CH=warning=2310 -FO=sectrel -NOPRE -NOM -LIS=E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.map -SH=SY -NOLO
+C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe -f E:\Anderain\git\BCE_CP\OUTPUT~1\MakeCPA.mak all
+C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe[1]: Entering directory `E:/Anderain/git/BCE_CP'
+"C:\PROGRA~1\CASIO\CLASSP~1\BIN\FXSH.EXE" -o C:\PROGRA~1\CASIO\CLASSP~1\obj\startaplAddin.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\setup.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\sectionAddin.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\RSYSRAM.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\BootINF.obj C:\PROGRA~1\CASIO\CLASSP~1\obj\main.obj -LIB="C:\PROGRA~1\CASIO\CLASSP~1\lib\bioslib.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libc.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\HiLIB.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\SHCLIBapl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\libgcall.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\JmpTblApl.lib, C:\PROGRA~1\CASIO\CLASSP~1\lib\ADDCOMMON.lib, E:\Anderain\git\BCE_CP\OUTPUT~1\aplmain.lib" -OU=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld -CH=warning=2310 -FO=sectrel -NOPRE -NOM -LIS=E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.map -SH=SY -NOLO
 
 ** L2310 (W) Undefined external symbol "typeinfo for CPModuleWindow" referenced in "main"
 
 Optimizing Linkage Editor Completed
-C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe[1]: Leaving directory `E:/Anderain/cp330/BCE_CP'
-C:\PROGRA~1\CASIO\CLASSP~1\bin\setheader "E:\Anderain\cp330\BCE_CP\OUTPUT~1\ADDINAPL.rld" "E:\Anderain\cp330\BCE_CP\OUTPUT~1\BCE_CP.cpa" -vp0100 -vl1000 -m2 -pA -o -bI"C:\Program Files\CASIO\ClassPad 300 SDK\bin\example.bmp"
+C:\PROGRA~1\CASIO\CLASSP~1\bin\make.exe[1]: Leaving directory `E:/Anderain/git/BCE_CP'
+C:\PROGRA~1\CASIO\CLASSP~1\bin\setheader "E:\Anderain\git\BCE_CP\OUTPUT~1\ADDINAPL.rld" "E:\Anderain\git\BCE_CP\OUTPUT~1\BCE_CP.cpa" -vp0100 -vl1000 -m2 -pA -o -bI"C:\Program Files\CASIO\ClassPad 300 SDK\bin\example.bmp"
 PV Application Header addition tools v0.4
 programmed by m.yanagisawa.
 Complete!
-C:\PROGRA~1\CASIO\CLASSP~1\bin\putname.exe -p0 -wp "E:\Anderain\cp330\BCE_CP\OUTPUT~1\BCE_CP.cpa" "BCE_CP"
+C:\PROGRA~1\CASIO\CLASSP~1\bin\putname.exe -p0 -wp "E:\Anderain\git\BCE_CP\OUTPUT~1\BCE_CP.cpa" "BCE_CP"
 PV Application name setting tool v0.1
 programmed by m.yanagisawa.
 
@@ -32,6 +32,6 @@ Microsoft (R) File Compression Utility  Version 2.00
 Copyright (C) Microsoft Corp. 1990-1992.  All rights reserved.
 
 Compressing addinapa.bin to addinapa.bi_.
-addinapa.bin: 26856 bytes compressed to 15602 bytes, 42% savings.
+addinapa.bin: 26860 bytes compressed to 15606 bytes, 42% savings.
 
 <<COMPILE_LOG END>>
